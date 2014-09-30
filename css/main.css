@@ -82,19 +82,21 @@ body {
 }
 
 .sales__details {
-  display:none;
   left: 0;
   margin: 25px 5% 0;
   padding: 2em;
   position: absolute;
   width: 90%;
+  opacity:0;
 
   background-color: #000;
   border-radius: 6px;
+  transition: all 250ms linear;
 }
 
 .sales__details[data-state="active"] {
-  display:block;
+  opacity:1;
+  margin-top:-.5em;
 }
 
 .sales__details::before {
@@ -109,7 +111,7 @@ body {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 10px solid #000;
-  transition: all 250ms linear;
+
 }
 
 .chart-list {
