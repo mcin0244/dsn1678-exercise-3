@@ -82,6 +82,7 @@ body {
 }
 
 .sales__details {
+  display:none;
   left: 0;
   margin: 25px 5% 0;
   padding: 2em;
@@ -90,6 +91,10 @@ body {
 
   background-color: #000;
   border-radius: 6px;
+}
+
+.sales__details[data-state="active"] {
+  display:block;
 }
 
 .sales__details::before {
